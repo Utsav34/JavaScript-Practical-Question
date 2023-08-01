@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial Number Array Elements</title>
+  </head>
+  <body>
+    <h4>Write a Program to Factorial number from array elements.</h4>
+    <!-- formula   const a = a * i -->
+    <script>
+      function myfun(fact) {
+        let total = 0;
+        for (var i = 0; i < fact.length; i++) {
+          total = fact[i] * i;
+        }
+        return total;
+      }
+      const mydata = [1, 2, 3, 4, 5];
+      let result = myfun(mydata);
+      console.log(result);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4> Write a program to find a even number from array elements.</h4>
+    <script>
+      function evensum(evendigit) {
+        let evennumber = [];
+        for (var i = 0; i < evendigit.length; i++) {
+          if (evendigit[i] % 2 == 0) {
+            evennumber.push(evendigit[i]);
+          }
+        }
+        return evennumber;
+      }
+      const myarr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 13, 16, 18, 20];
+      let mydata = evensum(myarr);
+      console.log("even number find from array", mydata);
+    </script>
+  </body>
+</html>

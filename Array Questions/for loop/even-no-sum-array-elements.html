@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even number Sum</title>
+</head>
+<body>
+    <h4>Find the even number from array elements and also add the sum of numberrs</h4>
+    <script>
+        function myfun(add){
+            let total = [];
+            let sum= 0;
+            for(var i=0; i<add.length; i++){
+                if(add[i] % 2 == 0 ){
+                  total.push(add[i]);
+                  sum += add[i];
+                }
+            }
+            return (total, sum);
+        }
+        var arr = [2,3,4,5,6,7,8,9,10,11,12,14,15];
+        var result = myfun(arr);
+        console.log(result)
+    </script>
+</body>
+</html>
